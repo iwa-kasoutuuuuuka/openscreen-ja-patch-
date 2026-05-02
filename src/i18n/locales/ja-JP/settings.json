@@ -8,13 +8,6 @@
 			"manual": "手動",
 			"auto": "自動",
 			"autoDescription": "カメラが録画中のカーソル位置に追従します"
-		},
-		"speed": {
-			"title": "ズーム速度",
-			"instant": "即時",
-			"fast": "高速",
-			"smooth": "滑らか",
-			"lazy": "遅延"
 		}
 	},
 	"speed": {
