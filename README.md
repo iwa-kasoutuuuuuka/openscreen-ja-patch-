@@ -3,88 +3,68 @@
 </p>
 
 # <p align="center">OpenScreen - 日本語完全ローカライズ版</p>
+# <p align="center">OpenScreen - Full Japanese Localization Edition</p>
 
 <p align="center">
-  <strong>オープンソースの画面録画・編集ツール「OpenScreen」を日本向けに最適化。</strong>
+  <strong>オープンソースの画面録画・編集ツール「OpenScreen」を日本向けに最適化。</strong><br />
+  <strong>Optimized the open-source screen recording & editing tool "OpenScreen" for Japan.</strong>
 </p>
 
 <p align="center">
-  <a href="#-概要">概要</a> •
-  <a href="#-主な機能">機能</a> •
-  <a href="#-パッチの適用方法">適用方法</a> •
-  <a href="#-ライセンス">ライセンス</a>
-</p>
-
-<p align="center">
-  <img src="C:\Users\AAA\.gemini\antigravity\brain\5665a53f-1895-42dd-953f-07ac3898b80c\openscreen_ja_banner_1777724449164.png" width="100%" alt="OpenScreen JA Banner" />
+  <a href="#-概要">概要 / Overview</a> •
+  <a href="#-主な機能">機能 / Features</a> •
+  <a href="#-パッチの適用方法">適用方法 / How to Apply</a> •
+  <a href="#-配布形態">配布形態 / Distribution</a>
 </p>
 
 ---
 
-## 🌟 概要
+## 🌟 概要 / Overview
 
-**OpenScreen** は、[Screen Studio](https://screen.studio/) にインスパイアされた、強力かつシンプルなオープンソースの画面録画・ビデオ編集ツールです。
+**OpenScreen** は、強力かつシンプルなオープンソースの画面録画・ビデオ編集ツールです。
+本プロジェクトでは、オリジナルの OpenScreen を**完全に日本語化**し、ハードコードされていた箇所の翻訳や、日本のユーザー向けの最適化を行っています。
 
-本プロジェクトは、オリジナルの OpenScreen を**完全に日本語化**し、日本のユーザーがより直感的に操作できるように調整したパッチ、およびフルパッケージを提供します。
-
-> [!NOTE]
-> 本プロジェクトは非公式のローカライズ版です。オリジナルの開発者に敬意を表し、すべての機能を日本語で快適に利用できるようにしています。
-
----
-
-## ✨ 主な機能
-
-### 🎥 録画機能
-- **高画質録画**: 特定のウィンドウ、または画面全体を鮮明にキャプチャ。
-- **マルチオーディオ**: システム音とマイク音を同時に、または個別に収録。
-- **Webカメラ統合**: 自分の顔をオーバーレイとして表示（近日対応予定）。
-
-### ✂️ 高度な編集
-- **スマートズーム**: カーソルの動きに合わせた自動ズーム、または手動での深度調整。
-- **タイムライン編集**: 直感的な操作で不要なシーンをカット（トリミング）。
-- **モーションブラー**: パンやズームの動きをプロフェッショナルに演出。
-- **注釈ツール**: テキスト、矢印、画像を追加して要点を強調。
-
-### 📤 出力設定
-- **多彩なフォーマット**: MP4 だけでなく、高品質な GIF アニメーションとしても出力可能。
-- **カスタム背景**: 壁紙、グラデーション、単色、または任意の画像を選択。
+**OpenScreen** is a powerful and simple open-source screen recording and video editing tool.
+This project provides a **full Japanese localization**, including translations of hard-coded strings and optimizations for Japanese users.
 
 ---
 
-## 🛠 パッチの適用方法
+## ✨ 主な機能 / Key Features
 
-すでにソースコードをお持ちの場合、以下の手順で日本語化を適用できます。
+### 🎥 録画と編集 / Record & Edit
+- **スマートズーム / Smart Zoom**: カーソルに追従する滑らかなズーム（自動・手動）。 / Smooth zoom following the cursor (Auto/Manual).
+- **タイムライン編集 / Timeline Editing**: 直感的なカット、トリミング、速度調整。 / Intuitive cutting, trimming, and speed adjustment.
+- **モーションブラー / Motion Blur**: プロ仕様のパン・ズーム演出。 / Professional-grade pan and zoom effects.
 
-1. **ダウンロード**: 本リポジトリからパッチファイルをダウンロードします。
-2. **上書きコピー**: `src` フォルダの内容を、OpenScreen のプロジェクトルートにある `src` フォルダに上書きします。
-3. **ビルド**:
-   ```bash
-   npm install
-   npm run dev # 開発モードで起動
-   ```
-
----
-
-## 🚀 GitHubへの公開 (自身のプロジェクトとして)
-
-もし、この日本語化版を自分のリポジトリとして公開したい場合は、以下の手順を実行してください。
-
-```bash
-# パッチフォルダに移動
-git init
-git add .
-git commit -m "feat: OpenScreen 日本語完全ローカライズ版のリリース"
-git branch -M main
-git remote add origin https://github.com/あなたのユーザー名/openscreen-ja.git
-git push -u origin main
-```
+### 🇯🇵 日本語化のポイント / Localization Highlights
+- **UI完全日本語化 / Full UI Localization**: すべてのダイアログ、メニュー、設定項目を日本語化。 / All dialogs, menus, and settings localized.
+- **ハードコード修正 / Hardcoded Fixes**: ソースコードレベルでのテキスト抽出と翻訳。 / Text extraction and translation at the source code level.
 
 ---
 
-## 📄 ライセンス
+## 🛠 パッチの適用方法 / How to Apply Patches
+
+### 1. 開発者向け（ソースコード用） / For Developers (Source Code)
+`src` フォルダをプロジェクトルートに上書きコピーしてください。
+Copy the `src` folder to your project root.
+
+### 2. 一般ユーザー向け（既設環境用） / For General Users (Existing Installation)
+`openscreen-binary-patch` フォルダ内の `apply_patch.ps1` を実行することで、インストール済みの OpenScreen を日本語化できます。
+You can localize an already installed OpenScreen by running `apply_patch.ps1` in the `openscreen-binary-patch` folder.
+
+---
+
+## 🚀 配布形態 / Distribution
+
+- **ポータブル版 / Portable Version**: 解凍してすぐに使えるZIP形式を提供。 / ZIP format available for immediate use without installation.
+- **ソースパッチ / Source Patch**: 開発者向けの差分ファイル一式。 / Full set of diff files for developers.
+
+---
+
+## 📄 ライセンス / License
 
 このプロジェクトはオリジナルの [MIT License](https://github.com/siddharthvaddem/openscreen/blob/main/LICENSE) を継承しています。
-商用・個人利用を問わず、どなたでも自由にご利用いただけます。
+This project inherits the original MIT License.
 
 ---
 
